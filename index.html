@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mon Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Le ruban de navigation */
+    nav {
+      background-color: #2c3e50;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    /* Le contenu des pages */
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Le ruban de navigation -->
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Page Accueil -->
+  <section id="accueil">
+    <h1>Bienvenue sur mon site personnel</h1>
+    <p>Bonjour,
+        je suis Gabriel Marty, étudiant prédoctoral en génie mécanique.
+        Bienvenue sur mon site personnel qui regroupe mes projets, mes formations et bien plus…
+    </p>
+
+      <!-- Aperçu du PDF -->
+    <h2>Mon CV</h2>
+      <br>
+      <iframe 
+      src="CV.pdf" 
+      width="100%" 
+      height="1200px">
+      </iframe>
+
+    <!-- Lien pour télécharger le PDF -->
+    <p><a href="CV.pdf" download>Pour télécharger mon CV</a></p>
+
+
+  </section>
+
+
+  <!-- Page Projets -->
+  <section id="projets">
+    <h1>Mes Projets</h1>
+    <p>Voici les projets principaux que j'ai réalisés :</p>
+    
+    <h2> Projet 1 : Intégration et contrôle actif d'un tensionneur de chenille agricole </h2>
+
+      <img 
+      src="PJT_T.JPG" 
+      width="100%"
+      style="margin-top: 20px;">
+    
+    
+    <h2> Projet 2 : Optimisation du choix d'un profil NACA </h2>
+      <iframe 
+      src="PJT_H2.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+
+    <h2> Projet 3 : Conception optimisée d'une hélice </h2>
+      <iframe 
+      src="PJT_H.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+    <h2> Projet 4 : Conception d'un sismographe expérimental </h2>
+      <img 
+      src="PJT_SIS.jpg" 
+      width="100%"
+      style="margin-top: 20px;">  
+    
+      <iframe 
+      src="PJT_SIS.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+
+
+  </section>
+
+  <!-- Page À propos -->
+<section id="apropos">
+  <h1>À propos</h1>
+
+  <h2>Formations</h2>
+
+  <h3>Génie mécanique — Université de Sherbrooke</h3>
+  <ul>
+
+    <li>Cours de dynamique, d'intégration de capteurs et de mécatronique</li>
+      <br>
+      <iframe 
+      src="DAP_IDA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+
+    <li>Cours sur l'optimisation multi-objectif</li>
+      <br>  
+      <iframe 
+      src="DAP_OA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+
+    <li>Cours de conception mécanique avancée</li>
+    <br>  
+    <iframe 
+      src="DAP_CMA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+
+    <li>Cours de dynamique avancée </li>
+      <br>
+      <iframe 
+      src="DAP_DA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+    <li>Cours de contrôle actif de bruit </li>
+      <br>
+      <iframe 
+      src="DAP_CAA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+
+  </ul>
+
+  <h3>Génie mécanique — École Nationale Supérieure des Arts et Métiers</h3>
+  <ul>
+
+    <li>Cours d'électronique, d'électrotechnique et d'automatique </li>
+      <br>
+      <iframe 
+      src="DAP_EEAA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      <br>
+
+    <li>Cours de mécanique de solide déformable avancée </li>
+      <br>
+      <iframe 
+      src="DAP_MDSA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+    
+    <br>
+
+    <li>Cours d'énergétique avancée </li>
+      <br>
+      <iframe 
+      src="DAP_ENGA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+      
+    <li>Cours de conception, de modélisation et de simulation avancée des systèmes </li>
+      <br>
+      <iframe 
+      src="DAP_COPA.pdf" 
+      width="100%" 
+      height="500px">
+      </iframe>
+
+  </ul>
+
+</section>
+
+<!-- Page Contact -->
+<section id="contact">
+  <h1>Contact</h1>
+  <p>Remplissez le formulaire ci-dessous pour m'envoyer un message.</p>
+
+  <form action="https://formspree.io/f/TON_ID" method="POST">
+    
+    <label>Nom :</label><br>
+    <input type="text" name="nom" placeholder="Votre nom" required><br><br>
+
+    <label>Email :</label><br>
+    <input type="email" name="email" placeholder="Votre email" required><br><br>
+
+    <label>Message :</label><br>
+    <textarea name="message" rows="5" placeholder="Votre message" required></textarea><br><br>
+
+    <button type="submit">Envoyer</button>
+
+  </form>
+</section>
