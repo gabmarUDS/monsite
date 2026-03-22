@@ -7,15 +7,22 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      padding-top: 60px;
       background-color: #f5f5f5;
       color: #333;
     }
 
     /* Le ruban de navigation */
     nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       background-color: #2c3e50;
       padding: 15px;
       text-align: center;
+      z-index: 1000;
+      box-sizing: border-box;
     }
 
     nav a {
@@ -48,8 +55,9 @@
   <!-- Le ruban de navigation -->
   <nav>
     <a href="#accueil">Accueil</a>
-    <a href="#apropos">À propos</a>
+    <a href="#comptech">Compétences techniques</a>
     <a href="#projets">Projets</a>
+    <a href="#formations">Formations</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -61,7 +69,7 @@
         Bienvenue sur mon site personnel qui regroupe mes projets, mes formations et bien plus…
     </p>
 
-      <!-- Aperçu du PDF -->
+  <!-- Aperçu du PDF -->
     <h2>Mon CV</h2>
       <br>
       <iframe 
@@ -76,10 +84,54 @@
 
   </section>
 
+<!-- Compétences techniques -->
+<section id="comptech">
+  <h2>Mes compétences techniques</h2>
+
+  <h3>Modélisation & Simulation</h3>
+  <ul>
+    <li>Modélisation multi‑physique (mécanique, thermique, électrique)</li>
+    <li>Simulation dynamique 3D de systèmes multi‑corps</li>
+    <li>Analyse vibratoire et comportement modal</li>
+  </ul>
+
+  <h3>Mécanique & Conception</h3>
+  <ul>
+    <li>Conception mécanique paramétrique et optimisation</li>
+    <li>Dimensionnement en plasticité et vibrations</li>
+    <li>Analyse de contraintes, inertie et énergie mécanique</li>
+    <li>Choix et intégration d’éléments de machines</li>
+  </ul>
+
+  <h3>Contrôle & Commande</h3>
+  <ul>
+    <li>Régulation numérique, rétroaction et anticipation</li>
+    <li>Contrôle actif de bruit et vibrations</li>
+    <li>Filtrage numérique adaptatif</li>
+    <li>Modélisation et contrôle de turbomachines</li>
+  </ul>
+
+  <h3>Optimisation & Intelligence numérique</h3>
+  <ul>
+    <li>Optimisation multivariable et multi‑objectifs</li>
+    <li>Métamodèles et optimisation de formes</li>
+    <li>Algorithmes de recherche et apprentissage machine</li>
+  </ul>
+
+  <h3>Outils & Logiciels</h3>
+  <ul>
+    <li>MATLAB / Simulink / Simulnik Real-Time</li>
+    <li>SolidWorks, Simulation & CAO</li>
+    <li>Python (NumPy, SciPy, optimisation)</li>
+    <li>Abaqus / Ansys</li>
+    <li>Git, Linux</li>
+  </ul>
+</section>
+
 
   <!-- Page Projets -->
   <section id="projets">
-    <h1>Mes Projets</h1>
+    <h1>Mes projets</h1>
     <p>Voici les projets principaux que j'ai réalisés :</p>
     
     <h2> Projet 1 : Intégration et contrôle actif d'un tensionneur de chenille agricole </h2>
@@ -125,26 +177,20 @@
   </section>
 
   <!-- Page À propos -->
-<section id="apropos">
-  <h1>À propos</h1>
+<section id="formations">
+  <h1>Mes formations</h1>
 
-  <h2>Formations</h2>
 
   <h3>Génie mécanique — Université de Sherbrooke</h3>
   <ul>
-    <li>Cours de dynamique, d'intégration de capteurs et de mécatronique</li>
-      <p>
-      Résoudre stratégiquement des problèmes technologiques ouverts en mobilisant les connaissances du domaine
-      de la dynamique, du contrôle et de la mécatronique :
-      </p>
-      <ul>
-      <li>Réactiver, intégrer et faire des liens entre les connaissances de base du domaine;</li>
-      <li>Identifier les différents éléments critiques impliqués dans le problème;</li>
-      <li>Modéliser les éléments importants d’un problème à partir des principes d'un domaine;</li>
-      <li>Identifier une solution pour résoudre un problème technologique en mobilisant les connaissances d'un domaine;</li>
-      <li>Évaluer une solution à partir de méthodes analytiques, numériques ou expérimentales;</li>
-      <li>Communiquer des résultats à ses pairs.</li>
+    <li>Compétences en dynamique, mécatronique et intégration de capteurs.</li>
+    <li>Modélisation et analyse de systèmes mécatroniques complexes.</li>
+    <li>Identification des paramètres critiques et des contraintes d’un système.</li>
+    <li>Résolution de problèmes techniques à l’aide de méthodes analytiques, numériques et expérimentales.</li>
+    <li>Conception de solutions techniques basées sur des modèles physiques.</li>
+    <li>Communication technique claire de résultats et recommandations.</li>
   </ul>
+  
       <br>
       <iframe 
       src="DAP_IDA.pdf" 
@@ -154,11 +200,11 @@
 
      <li style="margin-top: 10px;"> Cours sur l'optimisation multi-objectif </li>
       
-      <ul style="margin-top: 10px;">
-        <li>Apprendre les théories et méthodes permettant l'optimisation de systèmes multivariables dans un contexte d'ingénierie au niveau gradué.</li>
-        <li>Apprendre et appliquer les techniques pour réaliser des métamodèles.</li>
-        <li>Apprendre et appliquer les techniques d'optimisation simple et multiobjectifs.</li>
-      </ul>
+  <ul style="margin-top: 10px;">
+    <li>Maîtrise des méthodes d’optimisation de systèmes multivariables en ingénierie.</li>
+    <li>Création et utilisation de métamodèles pour la modélisation et la simulation.</li>
+    <li>Application d’algorithmes d’optimisation simple et multi‑objectifs (analyse, conception, décision).</li>
+  </ul>
 
       <br>
 
@@ -171,19 +217,16 @@
   <li style="margin-top: 10px;"> Cours de conception mécanique avancée</li>
 
   <ul style="margin-top: 10px;">
-
-  <li>Formuler une problématique de conception et justifier une opportunité de marché dans le contexte
-    socioéconomique réel;</li>
-  <li>Concevoir une solution créative par la méthode de l’analyse paramétrique appliquée selon l’approche
-    FReDPPARC;</li>
-  <li>Analyser scientifiquement la faisabilité de la solution créative proposée et évaluer le potentiel commercial de
-    l’idée;</li>
-  <li>Exposer les résultats scientifiques et technologiques;</li>
-  <li>Reconnaître, développer, et exploiter sa passion créatrice en génie;</li>
-  <li>Comprendre et appliquer la méthode d’organisation des idées FReDPARRC;</li>
-  <li>Expliquer, interpréter, et choisir les techniques de modélisation et d’expérimentation utilisées en conception;</li>
-  <li>Choisir et dimensionner les éléments de machine modernes;</li>
-  <li>Appliquer les principes de conception en génie mécanique.</li>
+    <li>Formulation de problématiques de conception et analyse d’opportunités marché en contexte réel.</li>
+    <li>Conception de solutions techniques via méthodes d’analyse paramétrique (approche FReDPPARC).</li>
+    <li>Évaluation de faisabilité technique et analyse du potentiel commercial de concepts innovants.</li>
+    <li>Présentation et communication de résultats scientifiques et technologiques.</li>
+    <li>Développement de créativité en ingénierie et génération de concepts innovants.</li>
+    <li>Organisation, structuration et priorisation d’idées selon la méthode FReDPARRC.</li>
+    <li>Sélection et application de techniques de modélisation et d’expérimentation en conception.</li>
+    <li>Dimensionnement et choix d’éléments de machines modernes.</li>
+    <li>Application des principes de conception en génie mécanique.</li>
+  </ul>
   
   </ul>
 
@@ -196,39 +239,15 @@
 
     <li style="margin-top: 10px;">Cours de dynamique avancée </li>
 
-      <p>
-  Formuler, résoudre de façon efficace et simuler les équations décrivant le mouvement en 3D de systèmes
-  mécaniques complexes comprenant plusieurs corps rigides et soumis à des contraintes :
-</p>
-
   <ul>
-  <li>
-    Formuler l'accélération de particules, de corps rigides et de systèmes de manière vectorielle (3D);
-  </li>
-  <li>
-    Calculer la masse, le centre de masse et le tenseur d’inertie de corps rigides;
-  </li>
-  <li>
-    Identifier et représenter les forces impliquées;
-  </li>
-  <li>
-    Exprimer les contraintes géométriques et cinématiques;
-  </li>
-  <li>
-    Calculer la puissance, le travail et l’énergie d’un système;
-  </li>
-  <li>
-    Formuler les équations du mouvement selon les techniques de Newton‑Euler, de D'Alembert et de Kane,
-    ainsi que les principes de conservation de la quantité de mouvement et de l’énergie;
-  </li>
-  <li>
-    Choisir les techniques appropriées selon le problème;
-  </li>
-  <li>
-    Simuler, visualiser et interpréter les résultats.
-  </li>
+    <li>Modélisation et simulation du mouvement 3D de systèmes mécaniques multi-corps.</li>
+    <li>Calcul de paramètres mécaniques : accélérations vectorielles, masse, centre de masse, tenseur d’inertie.</li>
+    <li>Identification et modélisation des forces, contraintes géométriques et cinématiques.</li>
+    <li>Analyse énergétique : puissance, travail et énergie d’un système mécanique.</li>
+    <li>Formulation des équations du mouvement (Newton‑Euler, D’Alembert, Kane) et application des principes de conservation.</li>
+    <li>Sélection des méthodes de modélisation et de calcul adaptées à la dynamique du système.</li>
+    <li>Simulation numérique, visualisation et interprétation des résultats dynamiques.</li>
   </ul>
-
 
       <br>
       <iframe 
@@ -241,33 +260,13 @@
   <li style="margin-top: 10px;">Cours de contrôle actif de bruit </li>
 
   <ul style="margin-top: 10px;">
-  <li>
-    Énoncer les principes, les composantes, les applications, l'état de l'art actuel en contrôle actif de bruit et
-    vibrations;
-  </li>
-  <li>
-    Appliquer les résultats de la minimisation de fonctions quadratiques pour simuler le contrôle actif optimal de
-    systèmes acoustiques ou vibratoires simples; comprendre les mécanismes et les stratégies de contrôle dans
-    diverses situations;
-  </li>
-  <li>
-    Comprendre les principes du filtrage numérique adaptatif et les appliquer à l'identification et au contrôle de
-    champs acoustiques et vibratoires;
-  </li>
-  <li>
-    Comprendre les théories du contrôle par anticipation et par rétroaction en contrôle actif;
-  </li>
-  <li>
-    Énoncer les diverses technologies de capteurs et d'actionneurs en contrôle actif et les sélectionner en vue
-    d'une application donnée;
-  </li>
-  <li>
-    Appliquer l'ensemble des notions théoriques du cours pour mettre en œuvre :
-    <ul>
-      <li>(1) un système de contrôle actif de bruit par anticipation dans un conduit;</li>
-      <li>(2) un système d'amortissement vibratoire actif d'une poutre en flexion par rétroaction.</li>
-    </ul>
-  </li>
+    <li>Analyse et modélisation de systèmes de contrôle actif du bruit et des vibrations.</li>
+    <li>Application de méthodes d’optimisation quadratique pour le contrôle actif acoustique et vibratoire.</li>
+    <li>Utilisation de filtrage numérique adaptatif pour l’identification et le contrôle de champs acoustiques et vibratoires.</li>
+    <li>Maîtrise des approches de contrôle par anticipation et par rétroaction.</li>
+    <li>Sélection et intégration de capteurs et d’actionneurs pour systèmes de contrôle actif.</li>
+    <li>Mise en œuvre de systèmes complets de contrôle actif, incluant :
+        contrôle actif du bruit dans un conduit et amortissement vibratoire actif d’une poutre.</li>
   </ul>
 
       <br>
@@ -284,7 +283,20 @@
   <h3>Génie mécanique — École Nationale Supérieure des Arts et Métiers</h3>
   <ul>
 
-    <li>Cours d'électronique, d'électrotechnique et d'automatique </li>
+    <li style="margin-top: 10px;">Cours d'électronique, d'électrotechnique et d'automatique </li>
+      <br>
+
+    <ul>
+      <li>Analyse, modélisation et contrôle de systèmes multi‑physiques.</li>
+      <li>Définition de cahiers des charges en contexte industriel (efficacité énergétique, développement durable, usine du futur).</li>
+      <li>Modélisation, dimensionnement et simulation de dispositifs de conversion d’énergie.</li>
+      <li>Simulation dynamique de systèmes à partir de modèles de composants élémentaires.</li>
+      <li>Conception de systèmes avec sélection et réglage de correcteurs numériques (stratégies de régulation).</li>
+      <li>Analyse des performances de systèmes asservis via approches basées modèles et validation expérimentale.</li>
+    </ul>
+
+  </ul>
+
       <br>
       <iframe 
       src="DAP_EEAA.pdf" 
@@ -293,7 +305,16 @@
       </iframe>
       <br>
 
-    <li>Cours de mécanique de solide déformable avancée </li>
+    <li style="margin-top: 10px;">Cours de mécanique de solide déformable avancée </li>
+
+    <ul>
+      <li>Dimensionnement de systèmes mécaniques en plasticité et en vibration, en tenant compte des contraintes technologiques et environnementales.</li>
+      <li>Analyse des limites des modèles linéaires et identification des sources de non‑linéarités dans les matériaux et structures.</li>
+      <li>Application des principes d’élasto‑plasticité (irréversibilité, seuil de plasticité) pour le calcul de milieux déformables.</li>
+      <li>Modélisation, analyse et calcul dynamique du comportement vibratoire de structures déformables.</li>
+      <li>Réalisation de calculs dynamiques analytiques (systèmes à deux degrés de liberté, poutres) ou numériques via outils de simulation.</li>
+    </ul>
+
       <br>
       <iframe 
       src="DAP_MDSA.pdf" 
@@ -303,7 +324,18 @@
     
     <br>
 
-    <li>Cours d'énergétique avancée </li>
+    <li style="margin-top: 10px;">Cours d'énergétique avancée </li>
+
+    <ul>
+      <li>Analyse, modélisation et compréhension du fonctionnement des systèmes énergétiques fluides et de leurs composants.</li>
+      <li>Réalisation de bilans énergétiques et représentation de cycles thermodynamiques (efficience énergétique, chaleur fatale, exergie).</li>
+      <li>Classification et analyse des turbomachines selon le transfert d’énergie, la géométrie et le régime d’écoulement.</li>
+      <li>Application de la théorie des similitudes pour la modélisation et la comparaison de turbomachines.</li>
+      <li>Dimensionnement de composants énergétiques à partir d’un cahier des charges et mise en œuvre d’une démarche de conception adaptée.</li>
+      <li>Analyse de phénomènes de cavitation dans les circuits hydrauliques et intégration de mesures correctives.</li>
+      <li>Analyse et description du fonctionnement des moteurs à combustion interne.</li>
+    </ul>
+
       <br>
       <iframe 
       src="DAP_ENGA.pdf" 
@@ -311,8 +343,18 @@
       height="500px">
       </iframe>
       
-    <li>Cours de conception, de modélisation et de simulation avancée des systèmes </li>
-      <br>
+    <li style="margin-top: 10px;">Cours de conception, de modélisation et de simulation avancée des systèmes </li>
+      
+    <ul>
+      <li>Modélisation et simulation numérique avancée de systèmes manufacturés sur l’ensemble du cycle de vie.</li>
+      <li>Mise en œuvre de méthodes de conception intégrant modélisation, simulation et validation numérique.</li>
+      <li>Modélisation et simulation des comportements multi‑physiques d’un système (mécanique, thermique, électrique, contrôle/commande).</li>
+      <li>Application de processus d’optimisation pour le dimensionnement de systèmes (algorithmes, optimisation de formes, méthodes d’apprentissage).</li>
+      <li>Analyse des impacts environnementaux au moyen d’une Analyse de Cycle de Vie (ACV).</li>
+      <li>Modélisation des processus décisionnels et réalisation d’analyses multicritères (techniques, économiques, environnementales).</li>
+    </ul>
+    
+    <br>
       <iframe 
       src="DAP_COPA.pdf" 
       width="100%" 
